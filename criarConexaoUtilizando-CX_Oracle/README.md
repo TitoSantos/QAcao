@@ -2,7 +2,7 @@
 
 
 
-![](C:\QAcao\criarConexaoUtilizando-CX_Oracle\img\cx_Oracle_arch.png)
+![](https://github.com/TitoSantos/QAcao/blob/master/criarConexaoUtilizando-CX_Oracle/img/cx_Oracle_arch.png)
 
 <h4><font color="#800080">CX_ORACLE:</font></h4>
 
