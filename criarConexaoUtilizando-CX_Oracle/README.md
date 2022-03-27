@@ -14,7 +14,7 @@
 
 <h4><font color="#800080">Como criar a conexão?</font></h4> 
 
-![](C:\QAcao\criarConexaoUtilizando-CX_Oracle\img\conexao.png)
+![](https://github.com/TitoSantos/QAcao/blob/master/criarConexaoUtilizando-CX_Oracle/img/conexao.png)
 
 <h5>A imagem acima monstra uma maneira bem simples de criar a conexão. Para isso foi criada a classe DBConnect e dentro dela foi criado um métono que retorna a conexão. Para que a conexão seja realizada, temos que passar os parâmetros user, password e dsn. Seguem exemplos de uso dentro dentro da biblioteca DBConect para auxiliar no entendimento.</h5>
 
