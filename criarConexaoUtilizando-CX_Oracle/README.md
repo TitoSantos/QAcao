@@ -2,7 +2,7 @@
 
 
 
-![](C:\Users\tiago.martiniano\OneDrive - Linx SA\Documentos\cx_Oracle_arch.png)
+![](C:\QAcao\criarConexaoUtilizando-CX_Oracle\img\cx_Oracle_arch.png)
 
 <h4><font color="#800080">CX_ORACLE:</font></h4>
 
@@ -14,7 +14,7 @@
 
 <h4><font color="#800080">Como criar a conexão?</font></h4> 
 
-![](C:\Users\tiago.martiniano\OneDrive - Linx SA\Documentos\conexao.png)
+![](C:\QAcao\criarConexaoUtilizando-CX_Oracle\img\conexao.png)
 
 <h5>A imagem acima monstra uma maneira bem simples de criar a conexão. Para isso foi criada a classe DBConnect e dentro dela foi criado um métono que retorna a conexão. Para que a conexão seja realizada, temos que passar os parâmetros user, password e dsn. Seguem exemplos de uso dentro dentro da biblioteca DBConect para auxiliar no entendimento.</h5>
 
