@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "b1291da4-f289-4146-92d0-726128bd3acf",
+		"name": "TesteAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GerarPessoa",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "acao",
+							"value": "gerar_pessoa",
+							"type": "text"
+						},
+						{
+							"key": "pontuacao",
+							"value": "N",
+							"type": "text"
+						},
+						{
+							"key": "sexo",
+							"value": "H",
+							"type": "text"
+						},
+						{
+							"key": "txt_qtde",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}",
+					"host": [
+						"{{url_base}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"var resposta = pm.response.json();",
+					"",
+					"pm.test(\"Cenario 1: Validar StatusCode\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Cenario 2: Validar se o responseBody contem o campo idade\", function () {",
+					"    pm.expect(pm.response.text()).to.include(\"idade\");",
+					"});",
+					"",
+					"pm.test(\"Cenario 3: Validar se o valor do campo sexo e masculino\", function () {",
+					"    pm.globals.set(\"sexo\", resposta[0].sexo);",
+					"    if (pm.globals.get(\"sexo\") == \"Masculino\"){",
+					"        console.log(\"Sucesso: O sexo é masculino\")",
+					"    }    ",
+					"});",
+					"",
+					"pm.test(\"Cenario 4: Armazenar o CPF do response na variavel cpf\", function() {",
+					"    var responseBody = pm.response.json();",
+					"    pm.globals.set(\"cpf\", responseBody[0].cpf);",
+					"    console.log(\"O CPF: \" +responseBody[0].cpf+ \" foi Armazenado com Sucesso !!\")",
+					"});",
+					"",
+					"pm.test(\"Cenario 5: Limpar a variavel CPF\", function(){",
+					"    pm.globals.unset(\"cpf\");",
+					"});",
+					"",
+					""
+				]
+			}
+		}
+	]
+}

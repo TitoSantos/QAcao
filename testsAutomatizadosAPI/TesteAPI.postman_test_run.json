@@ -1,0 +1,73 @@
+{
+	"id": "4937b54d-647b-4450-9adb-480e1401fda7",
+	"name": "TesteAPI",
+	"timestamp": "2022-04-06T00:46:46.519Z",
+	"collection_id": "14081730-b1291da4-f289-4146-92d0-726128bd3acf",
+	"folder_id": 0,
+	"environment_id": "14081730-667b2322-a3fd-434f-bdd6-b389a94defea",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dd8b0438-8f24-4e51-a4e0-e1c50fd1e8e1",
+			"name": "GerarPessoa",
+			"url": "https://www.4devs.com.br/ferramentas_online.php",
+			"time": 583,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Cenario 1: Validar StatusCode": true,
+				"Cenario 2: Validar se o responseBody contem o campo idade": true,
+				"Cenario 3: Validar se o valor do campo sexo e masculino": true,
+				"Cenario 4: Armazenar o CPF do response na variavel cpf": true,
+				"Cenario 5: Limpar a variavel CPF": true
+			},
+			"testPassFailCounts": {
+				"Cenario 1: Validar StatusCode": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cenario 2: Validar se o responseBody contem o campo idade": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cenario 3: Validar se o valor do campo sexo e masculino": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cenario 4: Armazenar o CPF do response na variavel cpf": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cenario 5: Limpar a variavel CPF": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				583
+			],
+			"allTests": [
+				{
+					"Cenario 1: Validar StatusCode": true,
+					"Cenario 2: Validar se o responseBody contem o campo idade": true,
+					"Cenario 3: Validar se o valor do campo sexo e masculino": true,
+					"Cenario 4: Armazenar o CPF do response na variavel cpf": true,
+					"Cenario 5: Limpar a variavel CPF": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 583,
+	"collection": {
+		"requests": [
+			{
+				"id": "dd8b0438-8f24-4e51-a4e0-e1c50fd1e8e1",
+				"method": "POST"
+			}
+		]
+	}
+}
